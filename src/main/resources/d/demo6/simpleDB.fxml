@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="d.demo6.Controller">
+   <children>
+      <TextField fx:id="idField" layoutX="238.0" layoutY="61.0" />
+      <TextField fx:id="nameField" layoutX="238.0" layoutY="106.0" />
+      <Label layoutX="140.0" layoutY="65.0" text="Student ID:" />
+      <Label layoutX="130.0" layoutY="110.0" text="Student Name:" />
+      <Button layoutX="349.0" layoutY="143.0" onAction="#add" text="Add" />
+      <TableView fx:id="studentTableView" layoutX="600.0" layoutY="32.0" prefHeight="719.0" prefWidth="529.0">
+         <columns>
+            <TableColumn fx:id="studentIdColumn" prefWidth="192.00006103515625" text="ID" />
+            <TableColumn fx:id="studentNameColumn" prefWidth="339.199951171875" text="Name" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>
